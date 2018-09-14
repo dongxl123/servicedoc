@@ -1,0 +1,20 @@
+{
+  "name": "servicedoc-example",
+  "version": "0.3.0",
+  "description": "servicedoc example project",
+  "title": "Custom serviceDoc browser title",
+  "url" : "https://api.github.com/v1",
+  "sampleUrl": "https://api.github.com/v1",
+  "header": {
+    "title": "My own header title",
+    "filename": "header.md"
+  },
+  "footer": {
+    "title": "My own footer title",
+    "filename": "footer.md"
+  },
+  "template": {
+  	"withCompare": true,
+  	"withGenerator": true
+  }
+}

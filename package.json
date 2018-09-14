@@ -1,0 +1,38 @@
+{
+  "name": "servicedoc-markdown",
+  "version": "0.2.0",
+  "description": "Generate API documentation in markdown format from servicedoc data.",
+  "main": "index.js",
+  "scripts": {
+    "release": "release-it -n -i patch",
+    "release:minor": "release-it -n -i minor",
+    "release:major": "release-it -n -i major"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "bin": {
+    "servicedoc-markdown": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/martinj/node-servicedoc-markdown"
+  },
+  "keywords": [
+    "servicedoc",
+    "markdown"
+  ],
+  "author": "Martin Jonsson <martin.jonsson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martinj/node-servicedoc-markdown/issues"
+  },
+  "dependencies": {
+    "optimist": "~0.6.0",
+    "underscore": "~1.5.2",
+    "ejs": "~0.8.5"
+  },
+  "devDependencies": {
+    "release-it": "0.0.12"
+  }
+}

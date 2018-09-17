@@ -26,3 +26,9 @@ nbdist/
 gradle/
 gradlew
 gradlew.bat
+
+doc/
+docker-example/
+node_modules/
+tmp/
+npm-debug.log

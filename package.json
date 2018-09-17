@@ -1,38 +1,74 @@
 {
-  "name": "servicedoc-markdown",
-  "version": "0.2.0",
-  "description": "Generate API documentation in markdown format from servicedoc data.",
-  "main": "index.js",
-  "scripts": {
-    "release": "release-it -n -i patch",
-    "release:minor": "release-it -n -i minor",
-    "release:major": "release-it -n -i major"
-  },
-  "directories": {
-    "example": "examples"
-  },
-  "bin": {
-    "servicedoc-markdown": "./index.js"
-  },
+  "name": "servicedoc",
+  "version": "1.0.1",
+  "description": "Interface Documentation Generator",
+  "author": "Dong Xuanliang <dongxl123@163.com>",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": "bin/servicedoc",
+  "main": "./lib/index.js",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/martinj/node-servicedoc-markdown"
+    "url": "https://gitee.com/UnlimitedBladeWorks_123/servicedoc.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "scripts": {
+    "jshint": "jshint lib/ test/",
+    "build-example": "node bin/servicedoc -i example/ -o tmp/",
+    "check-updates": "npm-check-updates"
   },
   "keywords": [
     "servicedoc",
-    "markdown"
+    "doc",
+    "documentation",
+    "dubbo",
+    "interface"
   ],
-  "author": "Martin Jonsson <martin.jonsson@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/martinj/node-servicedoc-markdown/issues"
+  "engines": {
+    "node": ">= 0.10.0"
   },
   "dependencies": {
-    "optimist": "~0.6.0",
-    "underscore": "~1.5.2",
-    "ejs": "~0.8.5"
+    "fs-extra": "~3.0.1",
+    "lodash": "~4.17.4",
+    "markdown-it": "^8.3.1",
+    "nomnom": "~1.8.1",
+    "winston": "~2.3.1",
+    "glob": "^7.1.1",
+    "iconv-lite": "^0.4.17",
+    "klaw-sync": "^2.1.0",
+    "semver": "~5.3.0"
   },
   "devDependencies": {
-    "release-it": "0.0.12"
+    "jshint": "^2.9.4",
+    "lodash-cli": "^4.17.4",
+    "mocha": "~3.4.1",
+    "npm-check-updates": "^2.11.1",
+    "path-to-regexp": "^1.7.0",
+    "semver": "^5.3.0",
+    "should": "~11.2.1",
+    "webfontloader": "^1.6.27",
+    "markdown-it": "^8.3.1"
+  },
+  "jshintConfig": {
+    "camelcase": true,
+    "curly": false,
+    "eqeqeq": true,
+    "forin": true,
+    "latedef": false,
+    "newcap": true,
+    "undef": true,
+    "unused": true,
+    "trailing": true,
+    "node": true,
+    "browser": true,
+    "predef": [
+      "it",
+      "describe",
+      "before",
+      "after"
+    ]
   }
 }

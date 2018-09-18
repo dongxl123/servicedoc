@@ -16,3 +16,10 @@
      @serviceresult
      @serviceresultexample
     ```
+#### v1.0.2
+   fix parses bug
+     
+     service_author.js
+     service_param.js  
+   
+     

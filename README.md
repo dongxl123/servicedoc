@@ -6,15 +6,15 @@
     
     ```
      @service
-     @serviceauthor
-     @serviceversion
-     @servicedescription
-     @servicegroup
-     @servicename
-     @serviceparam
-     @serviceparamexample
-     @serviceresult
-     @serviceresultexample
+     @serviceAuthor
+     @serviceVersion
+     @serviceDescription
+     @serviceGroup
+     @serviceName
+     @serviceParam
+     @serviceParamexample
+     @serviceResult
+     @serviceResultexample
     ```
 #### v1.0.2
    fix parses bug
@@ -22,4 +22,6 @@
      service_author.js
      service_param.js  
    
-     
+#### v1.0.3
+    readme modify
+

@@ -24,6 +24,9 @@
 #### v1.0.4
 * 修改EXAMPLES.md
 * 增加USEAGE.MD
+
+#### v1.0.5
+* serviceGroup、serviceName支持中文
 ---    
 
 

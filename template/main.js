@@ -112,7 +112,7 @@ require([
         // get titles from the first entry of group[].name[] (name has versioning)
         var titles = [];
         $.each (groupEntries, function(titleName, entries) {
-            var title = entries[0].title;
+            var title = entries[0].name;
             if(title !== undefined) {
                 title.toLowerCase().replace(/[äöüß]/g, function($0) { return umlauts[$0]; });
                 titles.push(title + '#~#' + titleName); // '#~#' keep reference to titleName after sorting
@@ -182,7 +182,7 @@ require([
             if (entry.group === group) {
                 if (oldName !== entry.name) {
                     nav.push({
-                        title: entry.title,
+                        title: entry.name,
                         group: group,
                         name: entry.name,
                         type: entry.type,
@@ -190,7 +190,7 @@ require([
                     });
                 } else {
                     nav.push({
-                        title: entry.title,
+                        title: entry.name,
                         group: group,
                         hidden: true,
                         name: entry.name,

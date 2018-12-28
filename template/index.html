@@ -30,7 +30,7 @@
         {{/if}}
       {{else}}
         <li class="{{#if hidden}}hide {{/if}}" data-group="{{group}}" data-name="{{name}}" data-version="{{version}}">
-          <a href="#api-{{group}}-{{name}}" class="nav-list-item">{{title}}</a>
+          <a href="#api-{{group}}-{{name}}" class="nav-list-item">{{name}}</a>
         </li>
       {{/if}}
     {{/if}}
@@ -103,7 +103,7 @@
 <script id="template-article" type="text/x-handlebars-template">
   <article id="api-{{article.group}}-{{article.name}}-{{article.version}}" {{#if hidden}}class="hide"{{/if}} data-group="{{article.group}}" data-name="{{article.name}}" data-version="{{article.version}}">
     <div class="pull-left">
-      <h1>{{article.groupTitle}}{{#if article.title}} - {{article.title}}{{/if}}{{#if article.author}} ({{article.author}}){{/if}}</h1>
+      <h1>{{article.groupTitle}}{{#if article.name}} - {{article.name}}{{/if}}{{#if article.author}} ({{article.author}}){{/if}}</h1>
     </div>
     {{#if template.withCompare}}
     <div class="pull-right">

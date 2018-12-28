@@ -1,11 +1,12 @@
 # ServiceDoc Examples
 ```java
    /**
-      * @service  用户查询 PaginationDTO<ProductInfoMoreDTO> multiSearchWithDynamicParamsByPagination2(Pagination pagination, Integer type)
+      * @service  PaginationDTO<ProductInfoMoreDTO> multiSearchWithDynamicParamsByPagination2(Pagination pagination, Integer type)
       * @serviceAuthor dongxl
       * @serviceVersion 2.0.0
       * @serviceDscription service层doc测试
-      * @serviceGroup DemoService
+      * @serviceGroup 用户模块
+      * @serviceName 用户查询
       * @serviceParam multiSearchWithDynamicParamsByPagination2
       * @serviceParam  (pagination) {Number} pageNum  第几页
       * @serviceParam  (pagination) {Number} pageSize 每页数量

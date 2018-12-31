@@ -1,7 +1,7 @@
 # ServiceDoc Examples
 ```java
    /**
-      * @service  PaginationDTO<ProductInfoMoreDTO> multiSearchWithDynamicParamsByPagination2(Pagination pagination, Integer type)
+      * @service UserService PaginationDTO<ProductInfoMoreDTO> multiSearchWithDynamicParamsByPagination2(Pagination pagination, Integer type)
       * @serviceAuthor dongxl
       * @serviceVersion 2.0.0
       * @serviceDscription service层doc测试

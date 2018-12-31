@@ -132,13 +132,7 @@
       <p>{{{nl2br article.description}}}</p>
     {{/if}}
 
-
-  {{#if article.service}}
-  <pre class="prettyprint language-html" data-type="{{toLowerCase article.type}}"><code>{{article.service}}</code></pre>
-  {{else}}
-  <span class="type type__{{toLowerCase article.type}}">{{toLowerCase article.type}}</span>
-  <pre class="prettyprint language-html" data-type="{{toLowerCase article.type}}"><code>{{article.url}}</code></pre>
-  {{/if}}
+  <pre class="prettyprint language-html" data-type="{{toLowerCase article.type}}"><code><h3>{{article.title}}</h3><br/>{{article.service}}</code></pre>
 
 
     {{#if article.permission}}

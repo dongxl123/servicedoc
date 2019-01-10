@@ -27,6 +27,9 @@
 
 #### v1.0.5
 * serviceGroup、serviceName支持中文
+
+#### v1.0.8
+* serviceParam、serviceResult中的type支持特殊符号<和>
 ---    
 
 

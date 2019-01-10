@@ -34,6 +34,9 @@
 #### v1.0.9
 * serviceParam、serviceResult中的type支持特殊符号,和空格
 
+#### v1.0.10
+* serviceParam、serviceResult中的type支持特殊符号<和>
+
 ---    
 
 
